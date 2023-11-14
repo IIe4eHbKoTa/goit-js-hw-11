@@ -1,0 +1,239 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+} /* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+ol,
+ul {
+  list-style: none;
+} /* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+}
+blockquote,
+q {
+  quotes: '' '';
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(64, 51, 114);
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.search-form input {
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 1.2em;
+    text-indent: 5px;
+    border: none;
+}
+
+.search-form > input:focus {
+    box-shadow: 0 0 20px #eee;
+    transition: 0.5s;
+}
+
+.search-form > input::placeholder {
+    text-align: center;
+    color: #4a4a4a;
+  }
+
+.search-form > button {
+    padding: 10px 20px 10px 20px;
+
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #003CC5 0%, #0B63F6 51%, #003CC5 100%);
+}
+
+.search-form > button:hover {
+    background-position: right center;
+    position: relative;
+    top: 2px;
+    box-shadow: 0 0 20px #eee;
+    cursor: pointer;
+}
+
+.search-form > button:focus {
+    background-position: right center;
+    position: relative;
+    top: 2px;
+    box-shadow: 0 0 20px #eee;
+}
+
+.gallery {
+    padding: 85px 10px 0 10px;
+    
+
+    display: flex;
+    gap: 15;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.photo-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #eee;
+    padding: 0;
+    width: 360px;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 15px ;
+  
+}
+
+.simple > img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.photo-card .info {
+    display: flex;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    gap: 7px;
+}
+
+.photo-card:hover {
+  background-position: right center;
+  position: relative;
+  top: -2px;
+  background-color: #0B63F6;
+  color: white;
+  box-shadow: 0 0 20px black;
+}
+
+
+.button-bg {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0 15px 0;
+  background-color: rgb(64, 51, 114);
+}
+
+.load-more {
+  display: none;
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #003CC5 0%, #0B63F6 51%, #003CC5 100%);
+}
+
+.button-bg > button:hover {
+  background-position: right center;
+  position: relative;
+  top: 2px;
+  box-shadow: 0 0 20px #eee;
+  cursor: pointer;
+}
+
+
+
+
+
